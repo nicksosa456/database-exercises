@@ -8,7 +8,7 @@ select record_sales from albums;
 select 'all albums released before 1980' as '';
 select album_name from albums where release_date < 1980;
 select 'move released before 1980 to 1800s' as '';
-update albums set release_date = release_date-1000 where release_date < 1980;
+update albums set release_date = release_date-100 where release_date < 1980;
 select album_name from albums where release_date < 1980;
 
 select 'all albums by Michael Jackson' as '';
