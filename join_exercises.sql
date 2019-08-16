@@ -21,7 +21,7 @@ from employees as e
     join titles as t on t.emp_no = e.emp_no
     join dept_emp as de on de.emp_no = e.emp_no
     join departments as d on d.dept_no = de.dept_no
-where d.dept_name = 'Customer Service' and t.to_date  = '9999-01-01'
+where d.dept_name = 'Customer Service' and t.to_date  = '9999-01-01' and de.to_date = '9999-01-01'
 group by title
 order by t.title;
 
